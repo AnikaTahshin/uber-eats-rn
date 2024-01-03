@@ -1,13 +1,18 @@
 import { SafeAreaView, StatusBar, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import HeaderTabs from "../components/HeaderTabs";
+import SearchBar from "../components/SearchBar";
+import Categories from "../components/Categories";
 
 const Home = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "#eee", flex: 1 }}>
       <StatusBar />
-      <HeaderTabs />
-      <Text>Home</Text>
+      <View style={{ backgroundColor: "#fff", padding: 15 }}>
+        <HeaderTabs />
+        <SearchBar />
+      </View>
+      <Categories />
     </SafeAreaView>
   );
 };
