@@ -11,25 +11,22 @@ import React, { useState } from "react";
 const HeaderTabs = () => {
   const [activeTab, setActiveTab] = useState("Delivery");
   return (
-    <SafeAreaView>
-      <StatusBar />
-      <View style={{ flexDirection: "row", alignSelf: "center", marginTop: 5 }}>
-        <HeaderButton
-          title="Delivery"
-          btnColor="#000"
-          textColor="#fff"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <HeaderButton
-          title="Pickup"
-          btnColor="#fff"
-          textColor="#000"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-      </View>
-    </SafeAreaView>
+    <View style={{ flexDirection: "row", alignSelf: "center", paddingTop: 5 }}>
+      <HeaderButton
+        title="Delivery"
+        btnColor="#000"
+        textColor="#fff"
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+      <HeaderButton
+        title="Pickup"
+        btnColor="#fff"
+        textColor="#000"
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+    </View>
   );
 };
 
